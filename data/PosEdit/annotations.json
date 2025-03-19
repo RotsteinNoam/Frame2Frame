@@ -1,0 +1,350 @@
+[
+    {
+        "image": "a2_s1.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s2.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s3.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s4.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s5.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s6.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s7.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a2_s8.png",
+        "target_caption": "A person streches their left hand to the left.",
+        "temporal_editing_caption": "A person raises their left hand and stretches it to the left.",
+        "instruction": "Raise left arm to the left"
+    },
+    {
+        "image": "a4_s1.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s2.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s3.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s4.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s5.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s6.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s7.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a4_s8.png",
+        "target_caption": "A person clapping their hands.",
+        "temporal_editing_caption": "A person in the image smoothly brings their hands together to start clapping.",
+        "instruction": "Clap your hands"
+    },
+    {
+        "image": "a7_s1.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s2.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s3.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s4.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s5.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s6.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s7.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a7_s8.png",
+        "target_caption": "A person making a basketball shooting posture.",
+        "temporal_editing_caption": "A person raises their arms and mimics a basketball shot.",
+        "instruction": "Mimic a basketball shoot"
+    },
+    {
+        "image": "a16_s7.png",
+        "target_caption": "A person holding their bent arms with closed hands near their face.",
+        "temporal_editing_caption": "A person raises their hands to their face, bending their arms and closing their hands.",
+        "instruction": "Curl arms"
+    },
+    {
+        "image": "a16_s8.png",
+        "target_caption": "A person holding their bent arms with closed hands near their face.",
+        "temporal_editing_caption": "A person raises their hands to their face, bending their arms and closing their hands.",
+        "instruction": "Curl arms"
+    },
+    {
+        "image": "a19_s1.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s2.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s3.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s4.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s5.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s6.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s7.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a19_s8.png",
+        "target_caption": "A person making a knocking motion with their left hand.",
+        "temporal_editing_caption": "The person raises their left hand and makes a knocking motion.",
+        "instruction": "Mimic knocking a door"
+    },
+    {
+        "image": "a22_s1.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s2.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s3.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s4.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s5.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s6.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s7.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a22_s8.png",
+        "target_caption": "A person jogging.",
+        "temporal_editing_caption": "A person mimicking a jogging motion by slowly raising their legs.",
+        "instruction": "Jog"
+    },
+    {
+        "image": "a26_s1.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s2.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s3.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s4.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s5.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s6.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s7.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a26_s8.png",
+        "target_caption": "A person is lunging with their right foot forward.",
+        "temporal_editing_caption": "A person stepping smoothly into a lunge with their right foot forward.",
+        "instruction": "Lunge"
+    },
+    {
+        "image": "a27_s1.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s2.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s3.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s4.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s5.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s6.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s7.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    },
+    {
+        "image": "a27_s8.png",
+        "target_caption": "A person performing a squat.",
+        "temporal_editing_caption": "A person bending their knees and lowering into a squat.",
+        "instruction": "Squat"
+    }
+]

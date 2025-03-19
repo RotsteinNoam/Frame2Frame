@@ -13,5 +13,4 @@ Check out our [project page 💻](https://rotsteinnoam.github.io/Frame2Frame/) f
 ## Resources
 The repository contains:
 - [Our results on the TEdBench dataset.](data/TEdBench_results/)
-- [The newly introduced PosEdit dataset.](data/PosEdit/)
-- [Our results on PosEdit.](data/PosEdit_results/)
+- [The newly introduced PosEdit dataset along with our resuts on it.](data/PosEdit/)
