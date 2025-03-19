@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathways on the Image Manifold: Image Editing via Video Generation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&display=swap">
+  <link rel="icon" href="buttons/logo.ico">
+
+  <style>
+    body {
+      background-color: rgb(245, 245, 245);
+      color: rgb(49, 48, 48);
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 50px 0;
+      box-sizing: border-box;
+    }
+
+    .main-container {
+      padding: 15px;
+      background-color: rgb(245, 245, 245);
+      max-width: 84%;
+      box-sizing: border-box;
+      margin-top: 50px;
+      align-items: center; /* This will center all children */
+    }
+
+    h1 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 56px;
+      line-height: 1.2;
+      margin-bottom: -18px;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 30px;
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 35px;
+      line-height: 1.2;
+      margin: 50px 0;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 25px;
+      line-height: 1.2;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      max-width: 70%;
+      margin-left: auto; /* Centers the h4 block horizontally */
+      margin-right: auto; 
+      text-align: center; /* Centers the text horizontally */
+    }
+
+    h5 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 25px;
+      line-height: 1.2;
+      margin: 50px 0;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: auto auto; /* Increase the top margin */
+    }
+
+
+    h6 {
+      font-family: 'Google Sans', sans-serif; /* Specific font for headers */
+      font-size: 18px;
+      line-height: 0;
+      margin-top: 20px;
+      color: darkblue;
+    }
+
+    p {
+      font-size: 18px; /* Increase the font size */
+      margin: 10px 0;
+    }
+
+    psmall {
+      font-size: 12px; /* Increase the font size */
+      margin: 10px 0;
+      margin-bottom: 60px; /* Increase this value to add more space below the text */
+      color: grey; /* Set the color to grey */
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align the images to the center */
+      gap: 10px; /* Adjust the space between the images */
+      width: 100%; /* Add this line */
+      text-decoration: none; /* Removes underline */
+    }
+
+    .image-item img {
+      max-width: 30px; /* Adjust the size of the images */
+      height: auto;
+    }
+
+    .image-title {
+      font-size: 18px; /* Adjust the font size */
+      text-align: center;
+      margin-top: 7px; /* Adjust the space above the text */
+      margin-bottom: 5px; /* Adjust the space below the text */
+      color: black;
+    }
+
+    .image-item {
+      opacity: 0.5; /* Add this line to set the transparency */
+    }
+
+    .image-item:hover {
+      opacity: 1; /* Add this line to set the opacity back to 100% on hover */
+    }
+
+    .image-container a {
+    text-decoration: none; 
+    }
+
+    .image-container a .image-title {
+      color:  black;
+    }
+
+    .image-container a:hover .image-title {
+      text-decoration: underline; 
+    }
+
+    .example-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* if you want the images centered */
+      height: auto;
+      max-width: 58%; /* Adjust this as needed to give space between images */
+      margin-left: auto; /* Centers the container horizontally */
+      margin-right: auto; /* Centers the container horizontally */  
+    }
+
+    .example-container-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* if you want the images centered */
+      height: auto;
+      max-width: 47%; /* Adjust this as needed to give space between images */
+      margin-left: auto; /* Centers the container horizontally */
+      margin-right: auto; /* Centers the container horizontally */  
+    }
+    .example-container-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* if you want the images centered */
+      height: auto;
+      max-width: 38%; /* Adjust this as needed to give space between images */
+      margin-left: auto; /* Centers the container horizontally */
+      margin-right: auto; /* Centers the container horizontally */  
+    }
+    .example-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  /* Ensure items are aligned in the center vertically if needed */
+      width: 80%; /* Adjust this as needed to give space between images */
+      margin: auto auto; /* Centers the row horizontally within its parent container */
+    }
+
+    .example-image {
+      max-width: 25%; /* Adjust this as needed to fit two images */
+      height: auto;
+      margin-right: 2px; /* Adds space to the right of each image */
+      margin-left: 2px; /* Adds space to the right of each image */
+    } 
+
+    .example-row-2 {
+      display: flex;
+      justify-content: space-around;
+      width: 64%; /* Adjust this as needed to give space between images */
+      margin-bottom: 20px; /* Space between rows */
+    }
+
+    .method-container {
+      height: auto;
+      max-width: 78%; /* Adjust this as needed to give space between images */
+      margin-left: auto; /* Centers the container horizontally */
+      margin-right: auto; /* Centers the container horizontally */  
+    }
+
+    .method-image {
+      max-width: 50%; /* Adjust this as needed */
+      height: auto;
+      margin-bottom: 20px; /* Add space between images */
+    }
+
+    .method-image2 {
+      max-width: 72%; /* Adjust this as needed */
+      height: auto;
+      margin-bottom: 20px; /* Add space between images */
+    }
+
+    .method-image3 {
+      max-width: 50%; /* Adjust this as needed */
+      height: auto;
+      margin-bottom: 20px; /* Add space between images */
+    }
+    .temporal-caption {
+    font-family: 'Playfair Display', serif; /* More elegant font */
+    font-weight: bold;
+    }
+
+    .image-description {
+      text-align: center;
+      max-width: 60%; /* Adjust as needed */
+      margin-top: 10px; /* Adjust as needed */
+      margin-left: auto; /* Centers the container horizontally */
+      margin-right: auto; /* Centers the container horizontally */  
+    }
+
+    .results-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%; /* Adjust this value to your desired width */
+      margin: 0 auto; /* Center the container */
+    }
+
+    .table-image {
+      width: 40%;
+      height: auto;
+    }
+    
+    .table-image2 {
+      width: 50%;
+      height: auto;
+    }
+
+    .author-links a {
+      text-decoration: none;
+      color: black;
+    }
+  .institute {
+    margin-top: 0;
+    margin-bottom: -16px; /* Adjust this value as needed */
+  }
+
+  .limited-width {
+    width: 66%;
+    margin: auto; /* Centering the paragraph */
+  }
+</style>
+
+</style>
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Pathways on the Image Manifold:</h1>
+    <br>
+    <h2>Image Editing via Video Generation</h2>
+    <!-- <p>Noam Rotstein<span style="font-size: 18px;">*</span> &nbsp;&nbsp; David Bensaid<span style="font-size: 18px;">*</span> &nbsp;&nbsp; Shaked Brody &nbsp;&nbsp; Roy Ganz &nbsp;&nbsp; Ron Kimmel</p> -->
+    <p class="author-links">
+      <a href="mailto:snoamr@cs.technion.ac.il">Noam Rotstein</a> &nbsp;&nbsp;
+      <a href="mailto:gal.yona@campus.technion.ac.il">Gal Yona</a> &nbsp;&nbsp; 
+      <a href="mailto:silver@campus.technion.ac.il">Daniel Silver</a> &nbsp;&nbsp; 
+      <a href="mailto:royve@campus.technion.ac.il">Roy Velich</a> &nbsp;&nbsp; 
+      <a href="mailto:dben-said@campus.technion.ac.il">David Bensaı̈d</a> &nbsp;&nbsp; 
+      <a href="mailto:ron@cs.technion.ac.il">Ron Kimmel</a>
+    </p>
+    <p>Technion - Israel Institute of Technology</p>
+    <psmall style="font-size: 15px;">*Denotes Equal Contribution</psmall>
+    <br>
+    <br>
+    <div class="image-container">
+      <a href="https://arxiv.org/abs/2411.16819" target="_blank" rel="noopener noreferrer">
+        <div class="image-item">
+          <img src="buttons/paper.jpg" alt="Paper">
+          <p class="image-title">Paper</p>
+        </div>
+      </a>
+      <a href="https://github.com/RotsteinNoam/Frame2Frame" target="_blank" rel="noopener noreferrer">
+        <div class="image-item">
+          <img src="buttons/code.png" alt="Code">
+          <p class="image-title">Code</p>
+        </div>
+      </a>
+    </div>
+    <h6>Presented at CVPR 2025</h6>
+  <h3>TL;DR</h3>
+  <h4>
+    We redefine image editing as a video generation task by leveraging pretrained generative diffusion video models. Our approach produces a smooth, continuous pathway on the image manifold with temporally coherent transitions from the source image to the edited version, thereby enhancing edit precision while preserving critical source details.  </h4>
+  <br>
+  <h3>Editing Examples</h3>
+  <div class="video-container">
+    <video width="80%" autoplay muted playsinline loop>
+      <source src="figures/editing_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>  
+  <br>
+  <h3>Abstract</h3>
+  <p class="limited-width">
+    Recent advances in image editing, driven by image diffusion models, have shown remarkable progress. However, significant challenges remain, as these models often struggle to follow complex edit instructions accurately and frequently compromise fidelity by altering key elements of the original image. Simultaneously, video generation has made remarkable strides, with models that effectively function as consistent and continuous world simulators. In this paper, we propose merging these two fields by utilizing image-to-video models for image editing. We reformulate image editing as a temporal process, using pretrained video models to create smooth transitions from the original image to the desired edit. This approach traverses the image manifold continuously, ensuring consistent edits while preserving the original image's key aspects. Our approach achieves state-of-the-art results on text-based image editing, demonstrating significant improvements in both edit accuracy and image preservation.  </p>
+  <br>
+  <h3>Frame2Frame</h3>
+  <div class="method-container">
+    <img class="method-image" src="figures/method.png" alt="Method Image 1">
+    <p class="image-description">
+      Our method, Frame2Frame (F2F), operates in three stages. First, given a source image and an editing prompt, a Vision-Language Model generates a 
+      <span class="temporal-caption">Temporal Editing Caption</span>, describing how the edit should naturally evolve over time.
+      Next, this caption guides an image-to-video generator to produce a smooth and realistic progression of the edit.
+      Finally, our frame selection strategy identifies the optimal frame that best fulfills the intended edit, resulting in the final edited image.      
+    </p>    
+    </p>
+  </div>
+  <br>
+  <h3>Edit Manifold Pathway</h3>
+  <div class="method-container">
+    <br>
+    <div class="video-container">
+      <video width="55%" autoplay muted playsinline loop>
+        <source src="figures/manifold.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>  
+    <p class="image-description">
+    We visualize the editing process within the natural image manifold using CLIP’s principal components. Unlike single-image methods that can cause abrupt shifts—such as jumping to a red cluster and removing the “AI” on the shirt—our video-based approach navigates the manifold incrementally, enabling smoother edits. This allows us to reach the purple cluster, which preserves key attributes like the “AI” on the shirt while successfully editing the person forming a heart shape.
+    </div>
+    <br>
+  <h3>Results</h3>
+  <img class="example-container" src="figures/tedbench_results.png" alt="Tedbench Image 1">
+  <br>
+  <img class="example-container-2" src="figures/tedbench_numbers.png" alt="Tedbench Image 2">
+  <br>
+  <p class="image-description">
+  Our approach consistently outperforms existing methods across various editing tasks on
+  the TEdBench dataset, producing edits that better align with target prompts while
+  preserving the source image’s content and structure.
+</p>
+  <br>
+  <h3>Additional Vision Tasks</h3>
+  <img class="example-container" src="figures/vision_tasks.png" alt="Tedbench Image 1">
+  <p class="image-description">
+  We demonstrate our framework’s applicability beyond traditional editing by applying it to fundamental image manipulation tasks, showing great potential for future research directions
+</p>
+  <br>
+  <h3>PosEdit</h3>
+  <img class="example-container-3" src="figures/posedit.png" alt="pipe data Image 1">
+  <br>
+  <p class="image-description">
+  ​We introduce PosEdit, a benchmark for human pose editing derived from the UTD-MHAD dataset. In this dataset, subjects perform predefined actions in a controlled indoor environment, providing ground-truth images for each editing task. Evaluations using PosEdit demonstrate the advantages of our method. ​
+</p>
+  <br>
+  <h3>Background Ablation</h3>
+  <img class="example-container" src="figures/ablation.png" alt="Results Image">
+  <p class="image-description">
+    ​We present additional ablation results demonstrating our method's ability to handle two distinct editing challenges: (1) diverse backgrounds and (2) out-of-video-distribution edits.​
+  </p>
+  <br>
+<!-- </div> -->
+<div style="width: 77%; margin: 0 auto; text-align: left;">
+  <h3 style="font-size: 1.8em;">BibTeX</h3>
+  <pre style="background-color: #e6dddd; padding: 10px;"><code>@article{rotstein2024pathways,
+    title={Pathways on the image manifold: Image editing via video generation},
+    author={Rotstein, Noam and Yona, Gal and Silver, Daniel and Velich, Roy and Bensa{\"\i}d, David and Kimmel, Ron},
+    journal={arXiv preprint arXiv:2411.16819},
+    year={2024}
+  }</code></pre>
+</div>
+<br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
