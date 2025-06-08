@@ -197,6 +197,24 @@
       margin-right: auto;
     }
 
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 27%;   /* 16 : 9 aspect-ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 50%;
+      margin: 0 auto;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    
     /* Unused .results-container, .table-image, .table-image2 rules removed */
 
     .author-links a {
@@ -257,6 +275,15 @@
       </video>
     </div>
     <br>
+    <h3>Project Video</h3>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/watch?v=z-I6DNml1pw"
+        title="video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
     <h3>Abstract</h3>
     <p class="limited-width">
       Recent advances in image editing, driven by image diffusion models, have shown remarkable progress. However, significant challenges remain, as these models often struggle to follow complex edit instructions accurately and frequently compromise fidelity by altering key elements of the original image. Simultaneously, video generation has made remarkable strides, with models that effectively function as consistent and continuous world simulators. In this paper, we propose merging these two fields by utilizing image-to-video models for image editing. We reformulate image editing as a temporal process, using pretrained video models to create smooth transitions from the original image to the desired edit. This approach traverses the image manifold continuously, ensuring consistent edits while preserving the original image's key aspects. Our approach achieves state-of-the-art results on text-based image editing, demonstrating significant improvements in both edit accuracy and image preservation.
